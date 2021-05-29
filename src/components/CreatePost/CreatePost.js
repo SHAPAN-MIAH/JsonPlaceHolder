@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import Sidebar from '../Sidebar/Sidebar';
 
 const CreatePost = () => {
-    const { register, handleSubmit, errors } = useForm();
+    const { register, handleSubmit } = useForm();
     
     const onSubmit = data => {
         fetch(`https://jsonplaceholder.typicode.com/posts/`, {
