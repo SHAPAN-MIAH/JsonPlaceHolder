@@ -1,0 +1,27 @@
+.postDtl_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap: 10px; */
+    
+}
+#deleteBtn{
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
+#deleteBtn:hover{
+    background: none;
+    border: 1px solid lightgray;
+}
+.postsContainer{
+    border: 1px solid lightgray;
+    margin: 15px 0px;
+    padding: 20px;
+}
+.sidebar{
+    position: fixed;
+}
+.sidebar li{
+    list-style: none;
+    text-decoration: none;
+}
