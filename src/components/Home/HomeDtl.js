@@ -20,7 +20,7 @@ const HomeDtl = (props) => {
     }
     return (
         <div className="container">
-                <div className="postsContainer">
+                <div className="postsContainer ">
                     <h4>{id}</h4>
                     <h5>{title}</h5>
                     <p>{body}</p>

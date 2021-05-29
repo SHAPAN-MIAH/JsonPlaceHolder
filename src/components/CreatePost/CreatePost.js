@@ -29,7 +29,7 @@ const CreatePost = () => {
                     <Sidebar/>
                 </div>
                 <div className="col-md-10">
-                    <form className="p-5 shadow-sm p-3 mb-5 bg-body rounded" onSubmit={handleSubmit(onSubmit)}>
+                    <form className="createPostForm p-5 shadow-sm p-3 mb-5 bg-body rounded" onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-group">
                             <input type="text" {...register("title")} name="title" placeholder="Title" className="form-control" />
                         </div>
@@ -43,7 +43,7 @@ const CreatePost = () => {
                         </div>
                         <br />    
                         <div className="form-group text-right">
-                            <button type="submit" className="createBtn">Create Post</button>
+                            <button type="submit" id="createBtn">Create Post</button>
                         </div>
                     </form>
                 </div>

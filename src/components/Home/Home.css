@@ -1,15 +1,15 @@
 .postDtl_container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-gap: 10px; */
-    
 }
-#deleteBtn{
+
+#deleteBtn, #createBtn{
     border: none;
     padding: 10px 50px;
     border-radius: 5px;
 }
-#deleteBtn:hover{
+
+#deleteBtn:hover, #createBtn:hover{
     background: none;
     border: 1px solid lightgray;
 }
@@ -24,4 +24,16 @@
 .sidebar li{
     list-style: none;
     text-decoration: none;
+}
+
+@media (max-width: 576px){
+    .postDtl_container{
+        grid-template-columns: 1fr;
+        width: 340px;
+        margin-left: auto;
+    }
+    .createPostForm{
+        margin-top: 50px;
+        
+    }
 }
