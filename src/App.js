@@ -2,11 +2,9 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import CreatePost from "./components/CreatePost/CreatePost";
-
 import Home from "./components/Home/Home";
 
 function App() {
@@ -16,9 +14,6 @@ function App() {
         <Switch>
           <Route path="/createPost">
             <CreatePost/>
-          </Route>
-          <Route path="/manage">
-            {/* <Users /> */}
           </Route>
           <Route path="/">
             <Home />
